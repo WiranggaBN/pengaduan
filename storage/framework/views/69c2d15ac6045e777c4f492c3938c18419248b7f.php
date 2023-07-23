@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PENGKAT | Pengaduan Masyarakat</title>
+  <title>Home | Perumda Sirin Meragun Sekadau</title>
 
   <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
-  <link rel="icon" href="<?php echo e(asset('img/favicon.svg')); ?>">
+  <link rel="icon" href="<?php echo e(asset('img/logo.png')); ?>">
   <style>
     html {
       scroll-behavior: smooth;
@@ -17,12 +17,12 @@
 
 <body class="leading-normal tracking-normal" style="font-family: 'Montserrat', sans-serif">
 
-  <nav class="flex items-center justify-between flex-wrap bg-blue-200 p-7 px-20">
+  <nav class="flex items-center justify-between flex-wrap bg-green-200 p-7 px-20">
     <div class="flex items-center flex-shrink-0 text-black mr-6">
-      <img src="<?php echo e(asset('img/logo.svg')); ?>" alt=""
+      <img src="<?php echo e(asset('img/PDAM.png')); ?>" alt=""
         class="transform transition hover:scale-125 duration-300 ease-in-out" />
       <span class="font-bold tracking-wider text-xl">
-        &nbsp PENGKAT</span>
+        </span>
     </div>
     <div class="block lg:hidden">
       <button
@@ -58,26 +58,26 @@
   <!-- Header -->
 
   <!--Hero-->
-  <div class="pt-24 px-16 bg-blue-200">
+  <div class="pt-24 px-16 bg-green-200">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!--Left Col-->
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-gray-800">
         <h1 class="my-4 text-4xl font-bold leading-tight">
-          Layanan Pengaduan Masyarakat Online
+          Layanan Pengaduan Pelanggan 
         </h1>
         <p class="leading-normal text-1xl mb-8">
           Sampaikan laporan masalah Anda di sini, kami akan memprosesnya
           dengan cepat.
         </p>
         <button
-          class="mx-auto lg:mx-0 bg-blue-500 text-white font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="mx-auto lg:mx-0 bg-green-500 text-white font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <a href="<?php echo e(url('login')); ?>">Laporkan!</a>
         </button>
       </div>
       <!--Right Col-->
       <div class="w-full md:w-3/5 text-center">
         <img class="object-fill mx-36 transform transition hover:scale-110 duration-300 ease-in-out"
-          src="<?php echo e(asset('img/hero.svg')); ?>" />
+          src="<?php echo e(asset('img/hero1.png')); ?>" />
       </div>
     </div>
   </div>
@@ -157,8 +157,8 @@
   </div>
   <!-- Footer -->
   <footer class="text-center font-medium bg-blue-200 py-5">
-    © <?php echo e(now()->year); ?> PENGKAT | By
-    <a href="https://madfariz.my.id/" class="text-blue-500" target="_blank">MadFariz</a>
+    © <?php echo e(now()->year); ?> Perumda Sirin Meragun | By
+    <a href="#" class="text-dark-500" target="_blank">Michael Rames Asiholan</a>
   </footer>
   <?php echo $__env->make('sweetalert::alert', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </body>
